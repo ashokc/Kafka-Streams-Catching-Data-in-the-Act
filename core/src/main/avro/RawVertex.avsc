@@ -1,0 +1,11 @@
+{
+	"namespace": "com.xplordat.rtmonitoring.avro",
+	"type": "record",
+	"name": "RawVertex",
+	"fields": [
+		{ "name": "sensor", "type": "string" },
+		{ "name": "timeInstant", "type": "long" },
+		{ "name": "X", "type": "double" },
+		{ "name": "Y", "type": "double" }
+	]
+}

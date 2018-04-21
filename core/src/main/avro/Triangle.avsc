@@ -1,0 +1,27 @@
+{
+	"namespace": "com.xplordat.rtmonitoring.avro",
+	"type": "record",
+	"name": "Triangle",
+	"fields" : [
+		{ "name": "timeStart", "type": "long" },
+		{ "name": "timeInstant", "type": "long" },
+		{ "name": "timeEnd", "type": "long" },
+		{ "name": "numberOfAMeasurements", "type": "int" },
+		{ "name": "numberOfBMeasurements", "type": "int" },
+		{ "name": "numberOfCMeasurements", "type": "int" },
+		{ "name": "xA", "type": "double" },
+		{ "name": "yA", "type": "double" },
+		{ "name": "xB", "type": "double" },
+		{ "name": "yB", "type": "double" },
+		{ "name": "xC", "type": "double" },
+		{ "name": "yC", "type": "double" },
+		{ "name": "AB", "type": "double" },
+		{ "name": "BC", "type": "double" },
+		{ "name": "AC", "type": "double" },
+		{ "name": "perimeter", "type": "double" },
+		{ "name": "area", "type": "double" },
+		{ "name": "totalDisplacement", "type": "double" }
+	]
+}
+
+

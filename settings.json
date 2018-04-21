@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+			"refresh_interval" : "10s"
+    }
+  },
+  "mappings": {
+    "doc": {
+			"dynamic_templates": [
+        { "times": { "match": "time*", "mapping": { "type": "date", "format" : "epoch_millis" } } },
+        { "integers2": { "match": "number*", "mapping": { "type": "integer" } } }
+			],
+			"properties" : {
+        "X": { "type": "double" },
+        "Y": { "type": "double" },
+        "sensor": { "type": "keyword" },
+        "pushCount": { "type": "integer" },
+        "delay": { "type": "integer" },
+        "cumulativeDisplacementForThisSensor": { "type": "double" },
+        "xA": { "type": "double" },
+        "yA": { "type": "double" },
+        "xB": { "type": "double" },
+        "yB": { "type": "double" },
+        "xC": { "type": "double" },
+        "yC": { "type": "double" },
+        "AB": { "type": "double" },
+        "BC": { "type": "double" },
+        "AC": { "type": "double" },
+        "perimeter": { "type": "double" },
+        "area": { "type": "double" },
+        "totalDisplacement": { "type": "double" }
+			}
+    }
+  }
+}
+

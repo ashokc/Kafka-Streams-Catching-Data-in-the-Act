@@ -1,0 +1,17 @@
+{
+	"namespace": "com.xplordat.rtmonitoring.avro",
+	"type": "record",
+	"name" : "SmoothedVertex",
+	"fields": [
+		{ "name": "sensor", "type": "string" },
+ 		{ "name": "timeStart", "type": "long" },
+ 		{ "name": "timeInstant", "type": "long" },
+ 		{ "name": "timeEnd", "type": "long" },
+ 		{ "name": "X", "type": "double" },
+ 		{ "name": "Y", "type": "double" },
+ 		{ "name": "numberOfSamplesIntheAverage", "type": "long" },
+ 		{ "name": "cumulativeDisplacementForThisSensor", "type": "double" },
+		{ "name": "pushCount", "type": "long" },
+		{ "name": "pushTime", "type": "long" }
+	]
+}

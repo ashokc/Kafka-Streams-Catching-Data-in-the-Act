@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="logFolder">/tmp/logs</Property>
+	</Properties>
+
+  <Appenders>
+    <!-- Console Appender -->
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout>
+				<Pattern>%d{ISO8661} [%X{runId}] %-5p %l{36} - %msg%n</Pattern>
+      </PatternLayout>
+    </Console>
+
+    <RollingFile name="text_file_appender">
+			<FileName>${logFolder}/kafka.log</FileName>
+			<FilePattern>${logFolder}/kafka-%d{yyyy-MM-dd}.log.zip</FilePattern>
+      <PatternLayout>
+				<Pattern>%d{ISO8661} [%X{runId}] %-5p %l{36} - %msg%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+      </Policies>
+      <DefaultRolloverStrategy max="50" />
+    </RollingFile>
+
+  </Appenders>
+
+  <Loggers>
+    <Logger name="com.xplordat.rtmonitoring" level="info" additivity="false">
+      <AppenderRef ref="text_file_appender" />
+      <AppenderRef ref="Console" />
+    </Logger>
+  </Loggers>
+</Configuration>
+
