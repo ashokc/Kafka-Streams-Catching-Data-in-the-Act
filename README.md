@@ -4,7 +4,7 @@ This is the source code to along with the series of blog articles
 
 * [Kafka Streams - Catching Data in the Act. 1](http://xplordat.com/2018/03/10/kafka-streams-catching-data-in-the-act-1/)
 * [Kafka Streams - Catching Data in the Act. 2: Steady and Unsteady States](http://xplordat.com/2018/04/11/kafka-streams-catching-data-in-the-act-2-steady-and-unsteady-states/)
-* [Kafka Streams - Catching Data in the Act. 3: The Mechanics](http://xplordat.com/2018/04/11/kafka-streams-catching-data-in-the-act-3-the-mechanics/)
+* [Kafka Streams - Catching Data in the Act. 3: The Mechanics](http://xplordat.com/2018/04/24/kafka-streams-catching-data-in-the-act-3-the-mechanics/)
 
 The code employs,
 
